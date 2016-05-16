@@ -502,10 +502,6 @@ h1, .hotel-name {
 }
 
 .search-form label {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 6px;
-  padding-bottom: 6px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -534,22 +530,22 @@ input[type=text]::-ms-clear {
   border: 2px solid #e5e5e5;
 }
 
-
 .calendar-in label {
-  width: 92px;
-  margin-right: 18px;
-  margin-left: 3px;
-  cursor: pointer;
-}
+    margin-right: 18px;
+    margin-left: 3px;
+    cursor: pointer;
+  }
 
 .calendar-in {
   margin-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .calendar-in-block, .calendar-out-block {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
   margin: 0;
   padding: 0;
 }
@@ -584,46 +580,52 @@ input[type=text]::-ms-clear {
 
 .calendar-out {
   margin-bottom: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .calendar-out label {
-  width: 95px;
   margin-right: 18px;
   cursor: pointer;
 }
 
 .age-filter {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 54px;
   font-size: 0;
 }
 
 .adults-block, .kids-block {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   font-size: 14px;
 }
 
+.kids-block {
+  width: 182px;
+}
+
 .adults-block {
-  margin-right: 22px;
+  width: 230px;
 }
 
 .age-filter .adults {
-  width: 72px;
-  margin-right: 37px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
 .age-filter .kids {
-  width: 69px;
-  margin-right: 24px;
-  text-align: right;
+  margin-right: 15px;
   cursor: pointer;
 }
 
 .age-filter .age-filter-block {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
   padding: 0;
   font-weight: bold;
 }
