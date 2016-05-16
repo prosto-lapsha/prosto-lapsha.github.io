@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - отели</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header container">
+      <nav class="main-navigation">
+        <ul class="main-menu">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li class="logo"><a href="index.html"><img src="img/logo-sedona.png" alt="logo" width="138" height="70"></a></li>
+          <li class="right"><a href="#">Карта штата</a></li>
+          <li class="right"><a href="hotels.html" class="active">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="filter">
+        <form action="https://echo.htmlacademy.ru/" method="get" class="clearfix">
+          <fieldset class="filter-infrastructure">
+            <legend>Инфраструктура:</legend>
+            <input type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label>
+
+            <input type="checkbox" name="parking-area" id="parking-area">
+            <label for="parking-area">Парковка</label>
+
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
+          </fieldset>
+          <fieldset class="filter-type">
+            <legend>Тип жилья:</legend>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+
+              <input type="checkbox" name="apartment" id="apartment" checked>
+              <label for="apartment">Апартаменты</label>
+          </fieldset>
+          <fieldset class="price">
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="price-check check">
+              <div class="min-price">
+                <label for="min">От</label>
+                <input type="text" name="min-price" value="0" id="min">
+              </div>
+              <div class="max-price">
+                <label for="max">До</label>
+                <input type="text" name="max-price" value="3000" id="max">
+              </div>
+            </div>
+
+            <div class="range">
+              <div class="scale">
+                <div class="scale-active"></div>
+              </div>
+              <div class="toggle toggle-left"></div>
+              <div class="toggle toggle-right"></div>
+            </div>
+
+            <input class="filter-btn-submit" type="submit" value="Показать">
+          </fieldset>
+        </form>
+      </div>
+      <div class="search-results clearfix">
+        <b class="results">Найдено: 3</b>
+        <div class="sorting">
+          <span>Сортировка:</span>
+          <ul>
+            <li><a class="active">по цене</a></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по рейтингу</a></li>
+          </ul>
+        </div>
+        <div class="arrows">
+          <span class="icon-up-dir"></span>
+          <span class="icon-down-dir active"></span>
+        </div>
+      </div>
+      <section class="hotel clearfix">
+        <a href="#" class="hotel-photo"><img src="img/hotel-amara-resort-spa.jpg" alt="Amara Resort Spa" width="135" height="90"></a>
+        <div class="hotel-about">
+          <h2 class="hotel-name"><a href="#">Amara Resort &amp; Spa</a></h2>
+          <div class="type-price clearfix">
+            <span class="hotel-type">Гостиница</span>
+            <span class="hotel-min-price">от 3500 р.</span>
+          </div>
+          <a href="#" class="about">Подробнее</a>
+          <a href="#" class="book">Забронировать</a>
+        </div>
+        <div class="rate">
+          <div class="star star-4"></div>
+          <span>Рейтинг: 8,5</span>
+        </div>
+      </section>
+      <section class="hotel clearfix">
+        <a href="#" class="hotel-photo"><img src="img/hotel-desert-qual-inn.jpg" alt="Desert Quail Inn" width="135" height="90"></a>
+        <div class="hotel-about">
+          <h2 class="hotel-name"><a href="#">Desert Quail Inn</a></h2>
+          <div class="type-price clearfix">
+            <span class="hotel-type">Мотель</span>
+            <span class="hotel-min-price">от 2000р</span>
+          </div>
+          <a href="#" class="about">Подробнее</a>
+          <a href="#" class="book">Забронировать</a>
+        </div>
+        <div class="rate">
+          <div class="star star-2"></div>
+          <span>Рейтинг: 8,9</span>
+        </div>
+      </section>
+      <section class="hotel clearfix">
+        <a href="#" class="hotel-photo"><img src="img/hotel-villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90"></a>
+        <div class="hotel-about">
+          <h2 class="hotel-name"><a href="#">Villas at Poco Diablo</a></h2>
+          <div class="type-price clearfix">
+            <span class="hotel-type">Апартаменты</span>
+            <span class="hotel-min-price">от 4000 р.</span>
+          </div>
+          <a href="#" class="about">Подробнее</a>
+          <a href="#" class="book">Забронировать</a>
+        </div>
+        <div class="rate">
+          <div class="star star-3"></div>
+          <span class="rank">Рейтинг: 9,2</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer container clearfix">
+        <section class="footer-hashtag">
+          <b>#visitsedona</b>
+        </section>
+        <section class="footer-social">
+          <div class="social-btn">
+            <a class="social-btn-tw" href="#">Twitter<span class="icon-twitter"></span></a>
+            <a class="social-btn-fb" href="#">Facebook<span class="icon-facebook"></span></a>
+            <a class="social-btn-yt" href="#">YouTube<span class="icon-youtube"></span></a>
+          </div>
+        </section>
+        <section class="footer-copyright">
+          <p>website by</p>
+          <a href="https://htmlacademy.ru/"></a>
+        </section>
+    </footer>
+  </body>
+</html>
